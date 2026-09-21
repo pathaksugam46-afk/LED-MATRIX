@@ -98,49 +98,28 @@ void loop() {
 - Flush cutter
 - Multimeter (optional)
 
----
 
-## Repository Structure
-
-```
-LED-Matrix-PCB/
-│
-├── Source/
-│   └── LED_Matrix.epro
-│
-├── Gerber/
-│   ├── Gerber.zip
-│   ├── BOM.csv
-│   └── PickAndPlace.csv
-│
-├── Firmware/
-│   └── LED_Matrix_Test.ino
-│
-├── Images/
-│   ├── Schematic.png
-│   ├── PCB.png
-│   ├── PCB_3D.png
-│   └── Render.png
-│
-├── LICENSE
-└── README.md
-```
-
----
 
 ## Images
 
 ### Schematic
 
-![Schematic](Images/Schematic.png)
+<img width="886" height="512" alt="Screenshot 2026-09-20 222319" src="https://github.com/user-attachments/assets/a8f30dd3-6f0a-46d6-b860-554d4b586e43" />
+
 
 ### PCB Layout
 
-![PCB](Images/PCB.png)
+<img width="1010" height="500" alt="Screenshot 2026-09-20 220755" src="https://github.com/user-attachments/assets/eec618ee-7128-4c2d-9a53-08270e113c86" />
+
 
 ### 3D View
 
-![3D PCB](Images/PCB_3D.png)
+#### Front
+
+<img width="1212" height="487" alt="Screenshot 2026-09-20 204534" src="https://github.com/user-attachments/assets/cdd40db5-5c34-4101-ad3f-992ca5434a0e" />
+
+#### Back
+
 
 ---
 
