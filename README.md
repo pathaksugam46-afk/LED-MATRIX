@@ -1,78 +1,163 @@
 # 12×4 LED Matrix PCB
 
-A simple 12×4 LED Matrix PCB designed in EasyEDA. This board is controlled using two 74HC595 shift register ICs, which reduce the number of Arduino I/O pins needed to drive the LEDs. The PCB is designed with a clean and compact layout for easy assembly and reliable performance.
+A compact **12×4 LED Matrix PCB** designed in **EasyEDA** using **two 74HC595D shift register ICs** and **four 2N4402 transistors**. The board is designed for Arduino and only requires **5V, GND, SER, CLK, and LATCH** connections to operate.
 
-This project can be used for learning multiplexing, shift registers, LED control, and basic PCB design.
+This project was created to learn PCB design, LED matrix multiplexing, and shift register communication while building a clean and professional PCB.
 
 ---
 
 ## Features
 
-- 12×4 LED matrix (48 LEDs)
-- Uses 2 × 74HC595 shift register ICs
-- Works with Arduino boards
-- Only three Arduino control pins required
+- 12 × 4 LED Matrix (48 LEDs)
+- 2 × 74HC595D Shift Register ICs
+- 4 × 2N4402 PNP Transistors
+- Arduino Compatible
+- Uses only 3 control signals
 - Compact and professional PCB layout
 - Easy to solder and assemble
 - Designed in EasyEDA
 
 ---
 
-## Arduino Connections
+## Hardware
 
-| PCB Pin | Arduino Pin |
+### Main Components
+
+- 48 × LEDs
+- 2 × 74HC595D Shift Registers
+- 4 × 2N4402 PNP Transistors
+- 4 × 1kΩ Resistors
+- 16 × 10kΩ Resistors
+- 1 × 5-Pin Header
+- Custom PCB
+
+---
+
+## Pinout
+
+| PCB Pin | Description |
 |---------|-------------|
+| 5V | Power Supply |
+| GND | Ground |
+| SER | Serial Data |
+| CLK | Shift Clock |
+| LATCH | Storage Clock |
+
+### Example Arduino Connections
+
+| Arduino | PCB |
+|----------|-----|
 | 5V | 5V |
 | GND | GND |
-| DATA (SER) | Any Digital Pin |
-| CLOCK (SRCLK) | Any Digital Pin |
-| LATCH (RCLK) | Any Digital Pin |
+| D11 | SER |
+| D13 | CLK |
+| D10 | LATCH |
 
-Example:
+---
+
+## Example Code
 
 ```cpp
-DATA  -> D11
-CLOCK -> D13
-LATCH -> D10
+#define DATA_PIN   11
+#define CLOCK_PIN  13
+#define LATCH_PIN  10
+
+void setup() {
+  pinMode(DATA_PIN, OUTPUT);
+  pinMode(CLOCK_PIN, OUTPUT);
+  pinMode(LATCH_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LATCH_PIN, LOW);
+
+  shiftOut(DATA_PIN, CLOCK_PIN, MSBFIRST, 0xAA);
+  shiftOut(DATA_PIN, CLOCK_PIN, MSBFIRST, 0x55);
+
+  digitalWrite(LATCH_PIN, HIGH);
+
+  delay(500);
+}
 ```
 
 ---
 
-## Components
-
-- 48 × LEDs
-- 2 × 74HC595 Shift Register IC
-- Current limiting resistors
-- Pin Header
-- Decoupling capacitors
-- PCB
-
----
-
-## Software
-
-The board can be programmed using the Arduino IDE. Since it uses the 74HC595 shift register, you can control the LEDs with the `shiftOut()` function or any compatible library.
-
----
-
-## Designed With
+## Tools Used
 
 - EasyEDA
 - Arduino IDE
 
 ---
 
-## Project Images
+## Assembly Tools
 
-Add your PCB images here.
+- Temperature-controlled soldering iron
+- Solder wire
+- Flux
+- Tweezers
+- Flush cutter
+- Multimeter (optional)
+
+---
+
+## Repository Structure
 
 ```
-Images/
-├── Schematic.png
-├── PCB.png
-├── PCB_3D.png
-└── Finished_Board.png
+LED-Matrix-PCB/
+│
+├── Source/
+│   └── LED_Matrix.epro
+│
+├── Gerber/
+│   ├── Gerber.zip
+│   ├── BOM.csv
+│   └── PickAndPlace.csv
+│
+├── Firmware/
+│   └── LED_Matrix_Test.ino
+│
+├── Images/
+│   ├── Schematic.png
+│   ├── PCB.png
+│   ├── PCB_3D.png
+│   └── Render.png
+│
+├── LICENSE
+└── README.md
 ```
+
+---
+
+## Images
+
+### Schematic
+
+![Schematic](Images/Schematic.png)
+
+### PCB Layout
+
+![PCB](Images/PCB.png)
+
+### 3D View
+
+![3D PCB](Images/PCB_3D.png)
+
+---
+
+## Applications
+
+- Arduino Projects
+- LED Display
+- Electronics Learning
+- PCB Design Practice
+- Shift Register Experiments
+- Embedded Systems
+
+---
+
+## License
+
+This project is released under the **MIT License**.
 
 ---
 
@@ -80,4 +165,6 @@ Images/
 
 **Sugam Pathak**
 
-This PCB was designed as a personal learning project to improve my PCB design skills and create a clean, professional LED Matrix board that can be easily used with Arduino.
+Robotics Designer • PCB Designer • Embedded Systems Enthusiast
+
+Designed in **EasyEDA** as a learning project to explore PCB design, LED matrix multiplexing, and Arduino-based hardware development.
