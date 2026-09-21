@@ -13,9 +13,6 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 - 4 × 2N4402 PNP Transistors
 - Arduino Compatible
 - Uses only 3 control signals
-- Compact and professional PCB layout
-- Easy to solder and assemble
-- Designed in EasyEDA
 
 ---
 
@@ -28,8 +25,6 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 - 4 × 2N4402 PNP Transistors
 - 4 × 1kΩ Resistors
 - 16 × 10kΩ Resistors
-- 1 × 5-Pin Header
-- Custom PCB
 
 ---
 
@@ -128,22 +123,13 @@ void loop() {
 - Arduino Projects
 - LED Display
 - Electronics Learning
-- PCB Design Practice
-- Shift Register Experiments
-- Embedded Systems
 
----
-
-## License
-
-This project is released under the **MIT License**.
-
----
 
 ## Author
 
 **Sugam Pathak**
 
-Robotics Designer • PCB Designer • Embedded Systems Enthusiast
+Robotics Designer • PCB Designer
 
 Designed in **EasyEDA** as a learning project to explore PCB design, LED matrix multiplexing, and Arduino-based hardware development.
+MADE FOR HACK CLUB
