@@ -28,6 +28,18 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 
 ---
 
+## Bill of Materials (BOM)
+
+| Qty | Component | Designators | Value |
+|----:|-----------|-------------|-------|
+| 48 | LED | LED2–LED49 | — |
+| 1 | Power Indicator LED | LED50 | Green LED |
+| 2 | 74HC595D Shift Register | U1, U2 | 74HC595D |
+| 4 | 2N4402 PNP Transistor | Q1–Q4 | 2N4402 |
+| 13 | Resistor | R1–R5, R10–R16, R18 | 10kΩ |
+| 4 | Resistor | R6–R9 | 1kΩ |
+| 2 | Mounting Hole | H1, H2 | M3 |
+
 ## Pinout
 
 | PCB Pin | Description |
