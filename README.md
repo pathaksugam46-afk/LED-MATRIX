@@ -28,17 +28,20 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 
 ---
 
+
 ## Bill of Materials (BOM)
 
-| Qty | Component | Designators | Value |
-|----:|-----------|-------------|-------|
-| 48 | LED | LED2–LED49 | — |
-| 1 | Power Indicator LED | LED50 | Green LED |
-| 2 | 74HC595D Shift Register | U1, U2 | 74HC595D |
-| 4 | 2N4402 PNP Transistor | Q1–Q4 | 2N4402 |
-| 13 | Resistor | R1–R5, R10–R16, R18 | 10kΩ |
-| 4 | Resistor | R6–R9 | 1kΩ |
-| 2 | Mounting Hole | H1, H2 | M3 |
+| Qty | Component | Value | Example Link | Unit Cost (USD)* | Total |
+|---:|-----------|-------|--------------|-----------------:|------:|
+| 48 | LED | 3mm/5mm Red LED | https://www.lcsc.com/search?q=red%20led | $0.02 | $0.96 |
+| 1 | Power Indicator LED | Green LED | https://www.lcsc.com/search?q=green%20led | $0.02 | $0.02 |
+| 2 | Shift Register IC | 74HC595D | https://www.lcsc.com/search?q=74HC595D | $0.06 | $0.12 |
+| 4 | PNP Transistor | 2N4402 | https://www.lcsc.com/search?q=2N4402 | $0.05 | $0.20 |
+| 13 | Resistor | 10kΩ 0805 | https://www.lcsc.com/search?q=10k%200805 | $0.005 | $0.07 |
+| 4 | Resistor | 1kΩ 0805 | https://www.lcsc.com/search?q=1k%200805 | $0.005 | $0.02 |
+| 2 | Mounting Hole | M3 | — | — | — |
+
+| | | | **Estimated Total Component Cost** | | **≈ $1.39 USD** |
 
 ## Pinout
 
