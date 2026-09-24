@@ -111,23 +111,31 @@ void loop() {
 
 ### Schematic
 
-<img width="886" height="512" alt="Screenshot 2026-09-20 222319" src="https://github.com/user-attachments/assets/a8f30dd3-6f0a-46d6-b860-554d4b586e43" />
+<img width="886" height="512" alt="Schematic" src="https://github.com/user-attachments/assets/a8f30dd3-6f0a-46d6-b860-554d4b586e43" />
 
+---
 
 ### PCB Layout
 
-<img width="1010" height="500" alt="Screenshot 2026-09-20 220755" src="https://github.com/user-attachments/assets/eec618ee-7128-4c2d-9a53-08270e113c86" />
+#### Front
 
+<img width="983" height="447" alt="PCB Front" src="https://github.com/user-attachments/assets/2a3ba879-41bf-410d-82c5-8fe156413696" />
+
+#### Back
+
+<img width="986" height="435" alt="PCB Back" src="https://github.com/user-attachments/assets/0b1a4209-bb84-4e8a-aa45-fb21af99340f" />
+
+---
 
 ### 3D View
 
 #### Front
 
-<img width="1212" height="487" alt="Screenshot 2026-09-20 204534" src="https://github.com/user-attachments/assets/cdd40db5-5c34-4101-ad3f-992ca5434a0e" />
+<img width="1230" height="715" alt="3D Front" src="https://github.com/user-attachments/assets/0c3b79a0-f5f3-4ba8-8b01-ac5c6a871782" />
 
 #### Back
 
-
+<img width="1126" height="732" alt="3D Back" src="https://github.com/user-attachments/assets/ed304096-d4c4-465f-9250-e10aa148dd2e" />
 ---
 
 ## Applications
