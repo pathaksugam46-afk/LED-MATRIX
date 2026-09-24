@@ -44,6 +44,8 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 | | | | **Estimated Total Component Cost** | | **≈ $1.39 USD** |
 
 ## Pinout
+<img width="597" height="438" alt="Screenshot 2026-09-24 123341" src="https://github.com/user-attachments/assets/2a03b7f0-6582-43ed-8f5d-eb06bfd5dd70" />
+
 
 | PCB Pin | Description |
 |---------|-------------|
@@ -126,7 +128,7 @@ void loop() {
 
 #### Back
 
-<img width="986" height="435" alt="PCB Back" src="https://github.com/user-attachments/assets/0b1a4209-bb84-4e8a-aa45-fb21af99340f" />
+<img width="1127" height="761" alt="Screenshot 2026-09-24 123706" src="https://github.com/user-attachments/assets/1590d386-3799-4ccf-99d1-51e8f6214fa2" />
 
 ---
 
