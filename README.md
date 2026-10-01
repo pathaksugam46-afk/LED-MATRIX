@@ -16,6 +16,22 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 
 ---
 
+## Why I Built This
+
+I built this 12×4 LED Matrix PCB to learn how LED matrix displays work and to improve my PCB design skills. Instead of using a ready-made module, I wanted to design the circuit from scratch using 74HC595 shift registers and transistors. This project helped me understand LED multiplexing, shift register communication, schematic design, PCB layout, and component placement.
+
+During the project, I:
+- Designed the complete schematic in EasyEDA.
+- Connected all 48 LEDs into a 12×4 matrix.
+- Used two 74HC595D shift registers to reduce the number of Arduino I/O pins.
+- Added four 2N4402 PNP transistors for row control.
+- Designed and routed the PCB from scratch.
+- Improved the PCB by moving the ICs and some resistors to the back side to save space and create a cleaner layout.
+- Added a power indicator LED, decoupling capacitors, and mounting holes.
+- Fixed DRC errors, optimized routing, and prepared the board for manufacturing.
+
+This project gave me practical experience in PCB design, circuit organization, and hardware debugging while creating a reusable LED matrix module for future Arduino projects.
+
 ## Hardware
 
 ### Main Components
@@ -31,18 +47,18 @@ This project was created to learn PCB design, LED matrix multiplexing, and shift
 
 ## Bill of Materials (BOM)
 
-| Qty | Component | Value | Example Link | Unit Cost (USD)* | Total |
-|---:|-----------|-------|--------------|-----------------:|------:|
-| 48 | LED | 3mm/5mm Red LED | https://www.lcsc.com/search?q=red%20led | $0.02 | $0.96 |
-| 1 | Power Indicator LED | Green LED | https://www.lcsc.com/search?q=green%20led | $0.02 | $0.02 |
-| 2 | Shift Register IC | 74HC595D | https://www.lcsc.com/search?q=74HC595D | $0.06 | $0.12 |
-| 4 | PNP Transistor | 2N4402 | https://www.lcsc.com/search?q=2N4402 | $0.05 | $0.20 |
-| 13 | Resistor | 10kΩ 0805 | https://www.lcsc.com/search?q=10k%200805 | $0.005 | $0.07 |
-| 4 | Resistor | 1kΩ 0805 | https://www.lcsc.com/search?q=1k%200805 | $0.005 | $0.02 |
-| 2 | Mounting Hole | M3 | — | — | — |
+| Qty | Component | Designators | Package | Unit Price (USD)* | Total |
+|---:|-----------|-------------|---------|------------------:|------:|
+| 48 | Red LED | LED2–LED49 | 0402 | $0.03 | $1.44 |
+| 1 | Green Power LED | LED50 | 0603 | $0.03 | $0.03 |
+| 2 | 74HC595D Shift Register IC | U1, U2 | SOIC-16 | $0.02 | $0.04 |
+| 4 | 2N4402 PNP Transistor | Q1–Q4 | TO-92 | $0.06 | $0.24 |
+| 13 | 10kΩ Resistor | R1–R5, R10–R16, R18 | 0805 | $0.001 | $0.01 |
+| 4 | 1kΩ Resistor | R6–R9 | 0805 | $0.001 | $0.00 |
+| 1 | 2-Pin Header | H1 | 1.27mm TH | $0.01 | $0.01 |
+| 1 | 3-Pin Header | H2 | 1.27mm TH | $0.01 | $0.01 |
 
-| | | | **Estimated Total Component Cost** | | **≈ $1.39 USD** |
-
+| | | | **Estimated Total Component Cost** | | **≈ $1.78 USD** |
 ## Pinout
 <img width="597" height="438" alt="Screenshot 2026-09-24 123341" src="https://github.com/user-attachments/assets/2a03b7f0-6582-43ed-8f5d-eb06bfd5dd70" />
 
