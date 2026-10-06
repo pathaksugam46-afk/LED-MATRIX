@@ -2,7 +2,7 @@
 
 This is a small 124 LED Matrix PCB I have made in EasyEDA for learning about PCB design and LED Matrix working.
 
-Rather than purchasing a pre-made module, I decided to make one myself with 2 74HC595 shift registers and 4 2N4402 transistors. The board can be driven by an Arduino using only three signal pins.
+I could buy a ready-made module but instead chose to build one myself, using 2 74HC595 shift registers and 4 2N4402 transistors. This board allows for Arduino 3 pins signals only to drive it.
 
 ---
 
@@ -49,7 +49,7 @@ This project gave me a much better understanding of how to design PCBs and gave 
 
 ---
 
-## Bill of Materials (BOM)
+## Bill of Materials BOM
 
 | Qty | Component | Package | LCSC Link |
 |----:|-----------|---------|-----------|
